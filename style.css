@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main {
+    width: 100%;
+    padding: 20px;
+}
+.notifications-container {
+    margin-top: 30px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+.top h2 {
+    font-size: 16px;
+}
+.notifications-number {
+    display: flex;
+    align-items: center;
+}
+.top button {
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.notifications-number span {
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.notification {
+    display: flex;
+    margin-top: 5px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.notification:hover {
+    cursor: pointer;
+}
+.notification .time-notification {
+    display: inline-block;
+    margin-top: 5px;
+}
+.userPhoto img {
+    width: 40px;
+    margin-right: 15px;
+}
+.notificationInfo p {
+    font-size: 14px;
+}
+.notifcation-name {
+    font-weight: 800;
+}
+.place-notifcation {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+.time-notification {
+    font-size: 14px;
+    color: hsl(219, 14%, 63%);
+}
+.group {
+    font-weight: 800;
+    color: hsl(219, 85%, 26%);
+}
+.message {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid hsl(219, 14%, 63%);
+    color: hsl(219, 12%, 42%);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.active {
+    background-color: hsl(210, 60%, 95%);
+}
+.picture {
+    width: 40px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.photoNotification {
+    display: flex;
+}
+.activeButton {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+@media (min-width: 1280px) {
+    main {
+        display: flex;
+        justify-content: center
+    }
+    .notification-container-major {
+        max-width: 600px;
+    }
+}
